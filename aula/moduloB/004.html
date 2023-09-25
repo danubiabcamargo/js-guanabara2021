@@ -1,0 +1,55 @@
+<!--7. Operadores (parte 1)
+aritmeticos
+atribuição
+
+Ordem Precedência
+()
+**
+*/%
++-
+-->
+<style>
+  body {
+    font: normal 20pt Arial;
+  }
+</style>
+
+<script>
+  //Atribuição Simples
+  let a = 5+3;
+  document.write(`5 + 3  <strong> igual a : </strong> ${a} <br>`);
+  let b = a % 5;
+  document.write(`a % 5   <strong> igual a :</strong> ${b} <br>`);
+  let c = 5 * b**2;
+  document.write(`5 * b ** 2   <strong> igual a :</strong> ${c} <br>`);
+  let d = 10 - a /2;
+  document.write(`10 - a / 2   <strong>igual a :</strong> ${d} <br>`);
+  let e = 6*2/d;
+  document.write(`6 * 2 / d <strong> igual a : </strong>${e} <br>`);
+  let f = b % e + 4 / e;
+  document.write(`b % e + 4 / e <strong>igual a :</strong> ${f} <br><br>`);
+
+
+//Auto atribuição
+document.write("Auto-Atribuicoes <br> com o <strong>n</strong> comecando valendo em 3 <br>");
+let n = 3;
+document.write(n + 4 + '<br>');
+document.write(n - 4 + '<br>');
+document.write(n * 4 + '<br>');
+document.write(n / 4 + '<br>');
+
+/*Simplificando se caso o N receber ele mesmo 
+exemplo:
+ n = n + 4     ficando em :  n+=4 */
+
+//INCREMENTO
+/* exemplos
+var x = 5
+x = x + 1  ou pode usar
+ x ++   ou x --
+ */
+
+
+
+</script>
+
