@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeiros passos com DOM</title>
+    <style>
+      body {
+        background-color: gray;
+        color: white;
+        font: normal 18pt Arial;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Iniciando Estudos DOM</h1>
+    <h2>O que é DOM?</h2>
+    <img src="arvoreDOM.png" />
+    <p>Aqui vai o resultado</p>
+    <p>Segundo paragrafo</p>
+    <h2>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</h2>
+
+    <h3>Selecionando</h3>
+    <p>por Marca &#129046; getElementsByTagName()</p>
+    <p>por ID &#129046; getElementById()</p>
+    <p>por Nome &#129046; getElementsByName()</p>
+    <!-- + de um objeto é usar por marca e nome -->
+    <p>por Classe &#129046; getElementsByClassName()</p>
+    <p>por Seletor &#129046; querySelector()</p> 
+    <p>por Seletor &#129046; querySelectorAll()</p>
+
+    <div id="msg">Clique em mim</div>
+
+    <script>
+      let corpo = window.document.body
+      let p1 = window.document.getElementsByTagName('p')[0] //[0] é o primeiro paragrafo
+      //window.document.write('Está escrito assim: '+ p1.innerText) //seleciona o texto do primeiro paragrafo
+      //corpo.style.background ='black';
+      //p1.style.color='blue';
+
+
+
+      //getElementsByClassName()
+      //let d = window.document.getElementById('msg');
+      //d.style.background = 'green';
+
+
+      let d = window.document.querySelector('div#msg');
+      d.style.color='blue';
+    </script>
+  </body>
+</html>
